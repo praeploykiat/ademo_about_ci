@@ -19,6 +19,9 @@ describe("useCounter", () => {
 
     act(() => {
       result.current.setVal(5);
+    });
+
+    act(() => {
       result.current.increment();
     });
     expect(result.current.count).toBe(6);
